@@ -10,7 +10,7 @@ ui <- fluidPage(
   titlePanel("Shiny Collab"),
   fluidRow(
     column(7, tags$h4("Live share your code below")),
-    column(5, actionButton("run_code", h4(icon("play"), "Run")))
+    column(5, actionButton("run_code", h4(icon("play", style = "color: green;"), "Run Code")))
   ),
   fluidRow(
     column(7, tags$textarea(id = "code_area")),
