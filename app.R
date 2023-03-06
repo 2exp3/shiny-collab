@@ -34,7 +34,7 @@ server <- function(input, output, session) {
         value = current_code()
       )
     }
-  }, ignoreInit = TRUE)
+  })
 
   observeEvent(input$run_code, {
     code <- current_code()
